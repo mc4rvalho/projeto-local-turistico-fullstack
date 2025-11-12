@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Opens Sans", sans-serif;
+  color: #333333;
+  background-color: F5F4F0;
+  text-align: left;
+}
+
+header {
+  width: 100%;
+  max-width: 1120px;
+  margin: 64px auto 64px auto;
+}
+
+.headline {
+  color: #E1624F;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #1B1B1B;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.legend {
+  font-size: 16px;
+  line-height: 28px;
+  text-align: justify;
+  color: #333333;
+  font-style: italic;
+}
+
+#highlights h2 {
+  color: #1B1B1B;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+#highlights p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.attraction h3 {
+  color: #1B1B1B;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.attraction p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.secondary {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+secondary b {
+  font-weight: 600;
+}
+
+.accent-blue {
+  color: #0C51A7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.accent-purple {
+  color: #591B98;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.accent-pink {
+  color: #E5245E;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.accent-orange {
+  color: #E95E10;
+  text-decoration: none;
+  font-weight: bold;
+}
