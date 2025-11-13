@@ -4,156 +4,182 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #1B1B1B;
+  --color-secondary: #333333;
+  --color-bg: #F5F4F0;
+  --color-hl: #E1624F;
+  --accent-blue: #0C51A7;
+  --accent-purple: #591B98;
+  --accent-pink: #E5245E;
+  --accent-orange: #E95E10;
+}
+
 body {
-  font-family: "Opens Sans", sans-serif;
-  color: #333333;
-  background-color: F5F4F0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-secondary);
+  background-color: var(--color-bg);
   text-align: left;
-  padding: 60px 24px;
+  padding: 3.75rem 1.5rem;
 }
 
 header {
   width: 100%;
-  max-width: 1120px;
-  margin: 64px auto 64px auto;
+  max-width: 70rem;
+  margin: 4rem auto 4rem auto;
 }
 
 .headline {
-  color: #E1624F;
-  font-size: 16px;
+  color: var(--color-hl);
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
 h1 {
-  color: #1B1B1B;
-  font-size: 36px;
+  color: var(--color-primary);
+  font-size: 2.25rem;
   font-weight: 700;
 }
 
 #introduction {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto 64px auto;
+  max-width: 70rem;
+  margin: 0 auto 4rem auto;
   text-align: center;
 }
 
 #introduction img {
   width: 100%;
-  max-width: 1120px;
-  height: 660px;
-  border: 2px solid transparent;
-  border-radius: 28px;
-  margin-bottom: 24px;
+  max-width: 70rem;
+  height: 41.25rem;
+  border: 0.125rem solid transparent;
+  border-radius: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .legend {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 1.75rem;
   text-align: justify;
-  color: #333333;
+  color: var(--color-secondary);
   font-style: italic;
 }
 
 #highlights {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto 40px auto;
+  max-width: 70rem;
+  margin: 0 auto 2.5rem auto;
 }
 
 #highlights h2 {
-  color: #1B1B1B;
-  font-size: 32px;
+  color: var(--color-primary);
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 #highlights p {
-  font-size: 16px;
-  line-height: 28px;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 2.5rem;
 }
 
 #attractions {
   width: 100%;
-  max-width: 1120px;
+  max-width: 70rem;
   margin: 0 auto;
+  counter-reset: attraction;
+}
+
+.attraction h3::before {
+  counter-increment: attraction;
+  content: counter(attraction) ". ";
 }
 
 .attraction img {
   display: block;
   width: 100%;
-  height: 350px;
-  border: 2px solid transparent;
-  border-radius: 28px;
-  margin-bottom: 24px;
+  height: 21.875rem;
+  border: 0.125rem solid transparent;
+  border-radius: 1.75rem;
+  margin-bottom: 1.5rem;
   object-fit: cover;
 }
 
 .attraction h3 {
-  color: #1B1B1B;
-  font-size: 28px;
+  color: var(--color-primary);
+  font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .attraction p {
-  font-size: 16px;
-  line-height: 28px;
-  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
 }
 
 .secondary {
-  font-size: 16px;
-  color: #333333;
-  margin-bottom: 40px;
+  font-size: 1rem;
+  color: var(--color-secondary);
+  margin-bottom: 2.5rem;
 }
 
-secondary b {
+.secondary b {
   font-weight: 600;
 }
 
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
 .accent-blue {
-  color: #0C51A7;
+  color: var(--accent-blue);
   text-decoration: none;
   font-weight: bold;
 }
 
 .accent-purple {
-  color: #591B98;
+  color: var(--accent-purple);
   text-decoration: none;
   font-weight: bold;
 }
 
 .accent-pink {
-  color: #E5245E;
+  color: var(--accent-pink);
   text-decoration: none;
   font-weight: bold;
 }
 
 .accent-orange {
-  color: #E95E10;
+  color: var(--accent-orange);
   text-decoration: none;
   font-weight: bold;
 }
 
 #description {
   width: 100%;
-  max-width: 1120px;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
 #description p {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 1.75rem;
   text-align: justify;
-  color: #333333;
+  color: var(--color-secondary);
 }
 
 footer {
-  color: #333333;
+  color: var(--color-secondary);
   text-align: center;
-  margin-top: 80px;
+  margin-top: 5rem;
 }
