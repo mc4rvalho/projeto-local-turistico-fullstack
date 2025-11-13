@@ -9,6 +9,7 @@ body {
   color: #333333;
   background-color: F5F4F0;
   text-align: left;
+  padding: 60px 24px;
 }
 
 header {
@@ -32,6 +33,13 @@ h1 {
   font-weight: 700;
 }
 
+#introduction {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto 64px auto;
+  text-align: center;
+}
+
 #introduction img {
   width: 100%;
   max-width: 1120px;
@@ -49,6 +57,12 @@ h1 {
   font-style: italic;
 }
 
+#highlights {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto 40px auto;
+}
+
 #highlights h2 {
   color: #1B1B1B;
   font-size: 32px;
@@ -60,6 +74,12 @@ h1 {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 40px;
+}
+
+#attractions {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .attraction img {
